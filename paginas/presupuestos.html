@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Aquí vas a poder pedir tu presupuesto. Completando el formulario con tus datos, podés elegir qué herramienta necesitás, y enviarnos tu consulta. También te contamos por qué te conviene elegirnos y qué beneficios podés tener por pedir tu presupuesto.">
+  <meta name="keywords" content="herramientas, catálogos, presupuestos, bremen, palladino, argentec.">
+  <meta name="author" content="Fani Casco">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!--MI SCSS-->
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Solicitá tu presupuesto</title>
+  <link rel="shortcut icon" type="text/css" href="../img/icono.png">
+</head>
+
+<body>
+
+  <!--start NAV-->
+  <nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo-h.png" alt="logo de house herramientas">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="empresa.html">EMPRESA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="herramientas.html">HERRAMIENTAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogos.html">CATÁLOGOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="presupuestos.html">PRESUPUESTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--end NAV-->
+
+  <main>
+    <header>
+      <h1>SOLICITÁ TU PRESUPUESTO</h1>
+      <img class="portada" src="../img/portada.webp"
+        alt="foto de un tablero con herramientas y el logo de house herramientas">
+
+      <!--start div contacto-->
+      <div>
+        <a href="./error404.html" class="tel">
+          <p class="contacto">Whatsapp: 3564-506752 Email:
+            househerramientas@gmail.com</p>
+        </a>
+      </div>
+      <!--start div contacto-->
+      <div class="pres-grid">
+        <div class="formu">
+          <form class="formulario" action="" method="">
+
+            <h6>¿QUÉ HERRAMIENTAS BUSCAS?</h6>
+
+            <p>Elige la clase de herramienta</p>
+
+            <select name="herramienta" id="herramienta">
+              <option>NEUMÁTICAS</option>
+              <option>ELÉCTRICAS</option>
+              <option>DE MANO</option>
+              <option>OTRAS</option>
+            </select>
+
+            <h6>¿CÓMO RECIBIRÍAS TU PEDIDO?</h6>
+
+            <p>Elige el método de envío</p>
+
+            <select name="envio" id="envio">
+              <option>A DOMICILIO</option>
+              <option>COMISIONISTA</option>
+              <option>TRANSPORTE</option>
+            </select>
+
+
+            <label for="name" id="label">NOMBRE</label>
+            <input type="text" id="name" class="input" placeholder="Nombre">
+
+            <label for="surname" id="label">APELLIDO</label>
+            <input type="text" id="surname" class="input" placeholder="Apellido">
+
+            <label for="emname" id="label">EMPRESA</label>
+            <input type="text" id="emname" class="input" placeholder="Nombre de la empresa">
+
+            <label for="numero" id="label">TELÉFONO</label>
+            <input type="tel" id="numero" class="input" placeholder="(Cód. de área) Número">
+
+            <label for="email" id="label">EMAIL</label>
+            <input type="text" id="email" class="input" placeholder="Correo electrónico">
+
+            <h6>HACE TU CONSULTA</h6>
+            <div>
+              <textarea name="" id="textarea" cols="" rows="" placeholder="Escribí tu consulta"></textarea>
+            </div>
+
+            <button type="submit" class="boton">Enviar</button>
+            <button type="reset" class="boton">Cancelar</button>
+
+          </form>
+        </div>
+
+        <div class="presupuesto">
+          <h4>¿POR QUÉ TE CONVIENE COMPRAR EN HOUSE?</h4>
+          <p>A nadie le gusta gastar el dinero así porque sí y, por eso, cuando se tiene que hacer frente al arreglo de
+            un
+            automóvil, ya sea en tu taller o en tu hogar, lo más normal es querer asegurarse a qué costos se tendrá que
+            hacer frente.</p>
+
+          <p>Aquí te damos la posibilidad de consultar no sólo qué herramientas hay disponibles, sino también cuánto
+            será
+            el precio de las mismas.</p>
+
+          <p>Sólo te tomará unos minutos llenar el formulario, elegir la clase de herramienta que necesitás y en caso de
+            que no esté la opción que buscas, seleccionas <b>OTRA,</b> y en el cuadro <b>HACE TU CONSULTA</b> podés
+            especificar lo que
+            estás buscando.</p>
+          <p>Elegí la forma en la que recibirías tu pedido. Esto <i>no confirma ninguna compra,</i> sólo es para ir
+            proyectando
+            un futuro envío.</p>
+          <p>Una vez que completaste todos los datos que se solicitan, estaremos comunicándonos lo más pronto posible
+            para
+            darte tu presupuesto.</p>
+          <p>Debido a la economía actual en la que estamos viviendo, tené en cuenta que <b>los precios pueden
+              variar</b>.
+            Por lo que te sugerimos no demorarte demaciado en confirmar la compra, así podemos mantener los mismos
+            precios.</p>
+        </div>
+      </div>
+    </header>
+
+    <footer>
+      <!--contacto de redes-->
+      <div class="redes">
+        <a href="https://m.facebook.com/House-Herramientas-104034054968619/">
+          <img class="f" src="../img/facebook.png" alt="logo de facebook."></a>
+        <a href="https://www.instagram.com/house_herramientas/?igshid=YmMyMTA2M2Y=">
+          <img class="i" src="../img/instagram.png" alt="logo de instagram."></a>
+        <a href="https://api.whatsapp.com/send?phone=543564506752">
+          <img class="w" src="../img/whatsapp.png" alt="logo de whastapp."></a>
+      </div>
+      <h5>© Copyright</h5>
+    </footer>
+  </main>
+  <!-- script js -->
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

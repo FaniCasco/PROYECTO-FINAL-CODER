@@ -1,0 +1,96 @@
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        'video'
+        'card'
+        'bremen'
+        'argentec'
+        'palladino'
+    ;
+    gap: 10px;
+
+    @media screen and (min-width: 576px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'video video video'
+            'card card card'
+            'bremen argentec palladino'
+          
+            
+    }
+    @media screen and (min-width: 992px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'video video'
+            'card bremen'
+            'card argentec'
+            'card palladino'
+          
+            
+    }
+   
+
+
+
+}
+
+.h-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        'h-1'
+        'h-2'
+        'h-3'
+        'h-4'
+        'h-5'
+        'h-6'
+    ;
+    gap: 10px;
+
+    @media screen and (min-width: 576px) {
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        'h-1 h-2'
+        'h-3 h-4'
+        'h-5 h-6'
+    ;
+    gap: 10px;
+    }
+    @media screen and (min-width: 576px) {
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        'h-1 h-2 h-3'
+        'h-4 h-5 h-6'
+        
+    ;
+    gap: 10px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .pres-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'formu presupuesto'
+            ;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+

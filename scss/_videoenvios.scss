@@ -1,0 +1,91 @@
+video {
+    @include wh($w-100, auto);
+    @include margen(6%, 10%, 0, auto);
+    display: grid;
+    grid-area: video;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid linear-gradient(90deg, rgba(20, 0, 0, 1) 0%, rgba(211, 203, 195) 50%, rgba(33, 19, 0, 1) 100%);
+    text-align: center;
+    justify-content: center;
+    box-shadow: 7px 13px 37px #000;
+    background: map-get($map: $degradados, $key: 'lineal-dos');
+
+    @media screen and (min-width: 992px) {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}
+
+.card {
+    display: grid;
+    grid-area: card;
+    text-align: center;
+    line-height: 46px;
+    font-size: 1.2em;
+
+
+    @media screen and (min-width: 992px) {
+       
+        margin-top: -5%;
+        width: 128%;
+        height: auto;
+        margin-left: 2%;
+        font-size: 1rem;
+        line-height: 24px;
+
+        @media screen and (min-width: 1200px) {
+            width: 110%;
+            margin-left: 20%;
+        }
+
+
+    }
+
+    .img-fluid {
+        height: 100%;
+    }
+
+    .card-title {
+        font-size: 1.2em;
+        margin-top: 7%;
+        margin-bottom: 3%;
+
+    }
+
+    .card-text {
+
+        @include margen(8%, 12%, 2%, 2%);
+
+        @media screen and (min-width: 576px) {
+            @include margen(0, 3%, 2%, 2%);
+
+        }
+
+        @media screen and (min-width: 992px) {
+            margin-bottom: 7%;
+            font-size: 1.2rem;
+            line-height: 31px;
+        }
+    }
+
+}
+
+
+.container video {
+
+    width: 100%;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    height: auto;
+    text-align: center;
+    margin-left: 0;
+
+    @media screen and (min-width: 1200px) {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+}

@@ -1,0 +1,164 @@
+.formu {
+
+    background: map-get($map: $degradados, $key: 'radial-tres');
+    box-shadow: 7px 13px 37px #000;
+    border-radius: 20px;
+    padding: 2%;
+    margin-top: 5%;
+
+    @media screen and (min-width: 576px) {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    @media screen and (min-width: 768px) {
+        @include wh (100%, auto);
+
+        margin-left: 1%;
+    }
+
+    @media screen and (min-width: 992px) {
+        width: 80%;
+        height: auto;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 68%;
+        height: auto;
+
+    }
+
+
+
+
+    .formulario {
+        text-align: center;
+        margin-top: 5%;
+
+
+        h6 {
+            color: $white;
+            margin: 2%;
+            text-decoration: underline;
+            line-height: 30px;
+
+            @media screen and (min-width: 1200px) {
+                font-size: 1.3rem;
+            }
+
+        }
+
+
+        p {
+            color: $white;
+            margin: 4%;
+
+            @media screen and (min-width: 1200px) {
+                font-size: 1.2rem;
+            }
+        }
+
+        #label {
+            color: $white;
+            display: flex;
+            padding: 10px 5px;
+            width: fit-content;
+            text-align: center;
+            margin: auto;
+        }
+
+        .input {
+            text-align: center;
+            justify-content: center;
+            margin: 5px;
+            padding: 5px;
+            background: map-get($map: $degradados, $key: 'lineal-uno');
+            min-width: 90%;
+            border: none;
+            border-radius: 4px;
+            color: #200202;
+
+            &:hover {
+                background: $white;
+                font-weight: 700;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+        }
+
+        #textarea {
+            width: 250px;
+            height: 57px;
+            text-align: center;
+            align-content: center;
+            padding: auto;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 2%;
+        }
+
+        .boton {
+            margin-top: 10%;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            background: map-get($map: $degradados, $key: 'lineal-dos');
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 2%;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+
+            &:hover {
+                background: map-get($map: $degradados, $key: 'lineal-uno');
+                font-weight: 600;
+            }
+        }
+
+    }
+
+}
+
+.presupuesto {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    color: $white;
+
+
+    h4 {
+        &:hover {
+            @include animacion(scale(1.15), 1s ease);
+
+        }
+
+    }
+
+    @media screen and (min-width: 576px) {
+        p {
+            margin-top: 4%;
+            font-size: 1.1rem;
+
+            @media screen and (min-width: 992px) {
+                font-size: 1.2rem;
+            }
+
+            @media screen and (min-width: 1200px) {
+                font-size: 1.4rem;
+                line-height: 34px;
+            }
+        }
+    }
+
+
+
+
+}

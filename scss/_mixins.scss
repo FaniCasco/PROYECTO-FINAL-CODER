@@ -1,0 +1,37 @@
+.key {
+    @extend .error;
+}
+
+
+@mixin d-flex($direction, $text-dec) {
+    display: flex;
+    flex-direction: $direction;
+    text-decoration: $text-dec;
+}
+
+@mixin margen($m-t, $m-b, $m-l, $m-r) {
+    margin-top: $m-t;
+    margin-bottom: $m-b;
+    margin-left: $m-l;
+    margin-right: $m-r;
+}
+
+@mixin animacion($transform, $transition) {
+    transform: $transform;
+    transition: $transition;
+}
+
+@mixin wh($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+
+$degradados: (
+    'lineal-uno': linear-gradient(to right, #E44D26 0%, #F16529 51%, #E44D26 100%),
+    'lineal-dos': linear-gradient(90deg, rgba(20, 0, 0, 1) 0%, rgba(211, 203, 195) 50%, rgba(33, 19, 0, 1) 100%),
+    'lineal-tres': linear-gradient(to right, #f1260f 0%, #f7f6f4 51%, #c21500 100%),
+    'radial-uno': radial-gradient(circle, rgba(232, 225, 176, 0.7587768383720676) 0%, rgba(255, 69, 0, 0.9828664742264093) 100%),
+    'radial-dos': radial-gradient(circle, rgba(230, 188, 117, 0.868) 0%, rgba(232, 102, 0, 0.9828664742264093) 100%),
+    'radial-tres': linear-gradient(90deg, rgb(100, 13, 5) 0%, rgba(212, 121, 75, 1) 50%, rgb(100, 13, 5) 100%),
+);
